@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background: url('C:/images/mtm.jpeg') center/cover no-repeat;
+      height: 500px;
+    }
+
+    .about-img, .services-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* Positioned below the parent item */
+  left: 0;
+  background-color:deeppink;
+  padding: 10px 0;
+  display: none; /* Hidden by default */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+  white-space: nowrap; /* Prevents breaking text */
+}
+
+
+.dropdown-menu li:hover {
+  background-color: #555;
+}
+
+/* Hover Effect */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the menu on hover */
+}
+
+/* Extra: Add Transition */
+.nav-item, .dropdown-menu {
+  transition: 0.3s ease-in-out;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="C:/images/MTM Logo.png" alt="MTM Logo" style="height: 30px; margin-right: 10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_self">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mtmadds1.html" target="_self">MTM Ads</a></li>
+                        <li><a class="dropdown-item" href="mtmevents1.html" target="_self">MTM Events</a></li>
+                        <li><a class="dropdown-item" href="mtmenterprises1.html" target="_self">MTM Enterprises</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects1.html" target="_self">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact3.html" target="_self">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="https://wa.me/9360051391?text=Hell0,+I+am+interestes+in+your+services" target="_blank">
+                        <i class="bi bi-whatsapp fa-4x m-3" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Insert Navbar Code Here -->
+  </nav>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+  
+      <!-- MTM Ads -->
+      <div id="ads" class="mb-5">
+        <h3 class="text-center mb-4">MTM Ads</h3>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <img src="C:/images/add5.jpg" alt="Ad 1" class="services-img">
+            <p class="mt-2 text-center">Bus/Cab/Auto Branding</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add6.jpg" alt="Ad 2" class="services-img">
+            <p class="mt-2 text-center">Airport Branding</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add7.jpg" alt="Ad 3" class="services-img">
+            <p class="mt-2 text-center">Metro and Train Branding</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add8.jpg" alt="Ad 4" class="services-img">
+            <p class="mt-2 text-center">Air/Tv Advertisement</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add9.jpg" alt="Ad 5" class="services-img">
+            <p class="mt-2 text-center">LED Van Advertisement</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add10.jpg" alt="Ad 6" class="services-img">
+            <p class="mt-2 text-center">Cycle Advertisement</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add11.jpg" alt="Ad 7" class="services-img">
+            <p class="mt-2 text-center">Bus Shelter Advertisement</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/add12.png" alt="Ad 8" class="services-img">
+            <p class="mt-2 text-center">Hoardings Advertisement </p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- MTM Events -->
+      <div id="events" class="mb-5">
+        <h3 class="text-center mb-4">MTM Events</h3>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <img src="C:/images/e10.jpg" alt="Event 1" class="services-img">
+            <p class="mt-2 text-center">School/College Events</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/event2.webp" alt="Event 2" class="services-img">
+            <p class="mt-2 text-center">Public Events</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/event3.jpg" alt="Event 3" class="services-img">
+            <p class="mt-2 text-center">Conference Events</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/event4.jpg" alt="Event 4" class="services-img">
+            <p class="mt-2 text-center">Inaugration and Brand Activation</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/e11.jpg" alt="Event 5" class="services-img">
+            <p class="mt-2 text-center">Business Expo</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e13.jpg"alt="Event 6" class="services-img">
+            <p class="mt-2 text-center">Marriage Functions</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/event7.webp" alt="Event 7" class="services-img">
+            <p class="mt-2 text-center">CSR Activities </p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e12.jpeg" alt="Event 8" class="services-img">
+            <p class="mt-2 text-center">Sports Events</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- MTM Enterprises -->
+      <div id="enterprises" class="mb-5">
+        <h3 class="text-center mb-4">MTM Enterprises</h3>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <img src="C:/images/e1.webp" alt="Enterprise 1" class="services-img">
+            <p class="mt-2 text-center">Roll-Up Standee</p>
+          </div>
+          <div class="col-md-3">
+            <img src="C:/images/e2.jpg" alt="Enterprise 2" class="services-img">
+            <p class="mt-2 text-center">Flyer/Phaplet Printing</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e3.jpg" alt="Enterprise 3" class="services-img">
+            <p class="mt-2 text-center">Banners Printing Moulding</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e4.webp" alt="Enterprise 4" class="services-img">
+            <p class="mt-2 text-center">Kiosk/Canopy</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e5.jpg" alt="Enterprise 5" class="services-img">
+            <p class="mt-2 text-center">Promotion Umbrella/Cap/T-Shirt</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e7.webp" alt="Enterprise 6" class="services-img">
+            <p class="mt-2 text-center">Sky balloon</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e8.jpg" alt="Enterprise 7" class="services-img">
+            <p class="mt-2 text-center">Inflatable Walker</p>
+          </div>
+          <div class="col-md-3">
+            <img src= "C:/images/e9.jpg"alt="Enterprise 8" class="services-img">
+            <p class="mt-2 text-center">Air Dancer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+<footer class="bg-dark text-light text-center py-5">
+  <div class="container">
+    <!-- Title -->
+    <h2 class="mb-4 text-uppercase text-dark">Contact Us</h2>
+    <p class="text-muted">
+      We’re here to provide you with exceptional support and assistance. Feel free to connect with us anytime!
+    </p>
+
+    <!-- Contact Details -->
+    <div class="row justify-content-center mb-4">
+      <!-- Office Address -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Visit Our Office</h4>
+            <p>
+              MTM Adds & Events<br>
+              977 Bavani Street, Highways Nagar, Near New Bus Stand<br>
+              Villupuram, Tamil Nadu, 605602
+            </p>
+            <p>
+              <strong>Open Hours:</strong> Mon - Sat, 9 AM - 6 PM
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Details -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Call Us</h4>
+            <p>
+              <strong>Phone:</strong> +91 9443359958<br>
+              <strong>Support:</strong> Available 24/7
+            </p>
+            <p>
+              For immediate help, reach out to our customer care team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Information -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Email Us</h4>
+            <p>
+              <strong>General Queries:</strong><br>
+              <a href="mailto:mytownmedia23@gmail.com" class="text-warning text-decoration-none">mytownmedia23@gmail.com</a>
+            </p>
+            <p>
+              <strong>Sales Inquiries:</strong><br>
+              <a href="mailto:sales@mtmservices.com" class="text-warning text-decoration-none">sales@mtmservices.com</a>
+            </p>
+            <p>We respond within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="mb-4">
+      <h4 class="text-dark mb-3">Follow Us</h4>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="https://www.instagram.com/" target="_blank" class="text-danger mx-3" aria-label="Instagram">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-primary mx-3" aria-label="Facebook">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="text-danger mx-3" aria-label="YouTube">
+          <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="text-info mx-3" aria-label="Twitter">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+      </div>
+      <p class="text-white mt-2">Stay connected and follow us for the latest updates and offers.</p>
+    </div>
+
+   
+
+    <!-- Footer Text -->
+    <p class="text:white">© 2024 MTM Services. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

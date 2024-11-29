@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTM Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .hero-section {
+      background: url('C:/images/web BG 1.png') center/cover no-repeat;
+      height: 500px;
+      
+    }
+    h1{
+      color: #272343;
+
+    }
+
+    .about-img, .services-img {
+      height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+    #loader { position: fixed; top: 0;
+       left: 0; width: 100%; 
+       height: 100%; background: #ffffff;
+        z-index: 9999; display: flex; align-items: center; 
+        justify-content: center;
+       }
+
+  .dropdown-menu {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* Positioned below the parent item */
+  left: 0;
+  background-color:deeppink;
+  padding: 10px 0;
+  display: none; /* Hidden by default */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  padding: 8px 20px;
+  white-space: nowrap; /* Prevents breaking text */
+}
+
+
+.dropdown-menu li:hover {
+  background-color: #555;
+}
+
+/* Hover Effect */
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the menu on hover */
+}
+
+/* Extra: Add Transition */
+.nav-item, .dropdown-menu {
+  transition: 0.3s ease-in-out;
+}
+
+       /* Spinner styles */ 
+
+       .spinner-border { 
+        width: 3rem;  
+        height: 3rem; }
+
+    .service-image {
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .service-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-image {
+  height: 400px; /* Adjust height to your preference */
+  object-fit: cover; /* Ensures the image fits within the container without distortion */
+  object-position: center; /* Centers the image within the frame */
+}
+
+.carousel-item img {
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text */
+      color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .carousel-caption p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    
+  </style>
+  
+</head>
+<body>
+<!-- Loader --> 
+<div id="loader"> 
+  <div class="spinner-border text-primary" role="status"> 
+    <span class="visually-hidden">Loading...</span>
+  </div> 
+</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src= "images/MTM Logo.png" alt="MTM Logo" style="height: 30px; margin-right: 10px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_self">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="mtmadds1.html" target="_self">MTM Ads</a></li>
+                        <li><a class="dropdown-item" href="mtmevents1.html" target="_self">MTM Events</a></li>
+                        <li><a class="dropdown-item" href="mtmenterprises1.html" target="_self">MTM Enterprises</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects1.html" target="_self">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact3.html" target="_self">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="https://wa.me/9360051391?text=Hell0,+I+am+interestes+in+your+services" target="_blank">
+                        <i class="bi bi-whatsapp fa-4x m-3" style="font-size: 1.5rem;"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Hero Section -->
+
+  <header class="text-white text-center py-5" style="position: relative; background-image: url('C:/images/web BG 1.png'); background-size: cover; background-position: center; height: 600px;">
+  <div class="container" style="position: relative; z-index: 2;">
+    <h1>Welcome</h1>
+    <p class="lead"></p>
+  </div>
+  <!-- Marquee -->
+  <div style="position: absolute; bottom: 0; width: 100%; background: rgba(0, 0, 0, 0.7);">
+    <marquee style="color: rgb(255, 255, 255); padding: 10px; font-size: 18px; font-weight: bold;">
+      MTM ADDS : Bus,Cab,Auto Branding, Airport Branding, Metro and Train Branding, Tv Advertisement
+
+      MTM EVENTS : School College Events, Public Events, Conference Events, Inaugration and Brand Activation
+
+      MTM ENTERPRISES : Roll-Up Standee, Phaplet Printing, Banners Printing Moulding, Kiosk/Canopy, Promotion Umbrella,Cap,T-Shirt
+    </marquee>
+  </div>
+</header>
+
+   <!-- About Us Section -->
+   <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row g-8">
+        <div class="col-md-12 grid-item">
+          <img src="images/event3.jpg" alt="About 1" class="about-img mb-3" style="position: relative; 
+          background-size: cover; background-position: center; height: 400px "; >
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Services Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 text-danger" style="font-weight: bold; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);">Our Services</h2>
+
+    <!-- Service 1: MTM ADDs -->
+    <div class="card mb-4 shadow-lg border-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6">
+          <img src="images/cake.jpg" alt="MTM ADDs" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-6 p-4">
+          <h3 class="text-center text-danger mb-3">MTM ADDs</h3>
+          <h5 class="text-primary mb-2">Car Branding</h5>
+          <p class="text-muted">
+            Transform your vehicles into mobile billboards with our cutting-edge car branding solutions.
+          </p>
+          <h5 class="text-primary mb-2">Airport Branding</h5>
+          <p class="text-muted">
+            Gain visibility in high-traffic areas with our professional airport advertising services.
+          </p>
+          <h5 class="text-primary mb-2">Outdoor Advertising</h5>
+          <p class="text-muted">
+            Reach a wide audience with premium billboard and signage services.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2: MTM Events -->
+    <div class="card mb-4 shadow-lg border-0">
+      <div class="row g-0 align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img src="images/cake.jpg" alt="MTM Events" class="img-fluid rounded-end">
+        </div>
+        <div class="col-md-6 p-4">
+          <h3 class="text-center text-danger mb-3">MTM Events</h3>
+          <h5 class="text-primary mb-2">Corporate Events</h5>
+          <p class="text-muted">
+            Elevate your business gatherings with expert planning and execution.
+          </p>
+          <h5 class="text-primary mb-2">Weddings & Celebrations</h5>
+          <p class="text-muted">
+            Create unforgettable memories with our personalized event services.
+          </p>
+          <h5 class="text-primary mb-2">Product Launches</h5>
+          <p class="text-muted">
+            Showcase your brand with impactful and creative launch events.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3: MTM Enterprises -->
+    <div class="card mb-4 shadow-lg border-0">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6">
+          <img src="images/cake.jpg" alt="MTM Enterprises" class="img-fluid rounded-start">
+        </div>
+        <div class="col-md-6 p-4">
+          <h3 class="text-center text-danger mb-3">MTM Enterprises</h3>
+          <h5 class="text-primary mb-2">Media Solutions</h5>
+          <p class="text-muted">
+            Comprehensive media strategies tailored to amplify your brand's presence.
+          </p>
+          <h5 class="text-primary mb-2">Content Creation</h5>
+          <p class="text-muted">
+            Professional video, graphic, and copywriting services to captivate your audience.
+          </p>
+          <h5 class="text-primary mb-2">Digital Marketing</h5>
+          <p class="text-muted">
+            Boost your online visibility with our SEO, PPC, and social media services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+<div class="container py-5">
+  <h1 class="text-center mb-5">Our Projects</h1>
+
+  <!-- Project Grid -->
+  <div class="row">
+    <!-- Project 1 -->
+    <div class="col-md-6">
+      <div class="card">
+        <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/add7.jpg" class="d-block w-100 carousel-image" alt="Project 1">
+              <div class="carousel-caption">
+                <h5>Slide 1: Event Preparation</h5>
+                <p>Setting up the stage and ensuring everything is perfect for the concert.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/event7.webp" class="d-block w-100 carousel-image" alt="Project 2">
+              <div class="carousel-caption">
+                <h5>Slide 2: Audience Gathering</h5>
+                <p>Thousands of people attending the live concert with excitement.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/e12.jpeg" class="d-block w-100 carousel-image" alt="Project 3">
+              <div class="carousel-caption">
+                <h5>Slide 3: Performers on Stage</h5>
+                <p>The performers delivering an unforgettable experience.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-6">
+      <div class="card">
+        <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/e3.jpg" class="d-block w-100 carousel-image" alt="Project 4">
+              <div class="carousel-caption">
+                <h5>Slide 1: Banner Design</h5>
+                <p>Innovative designs for corporate banners tailored to client needs.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/event1.jpg" class="d-block w-100 carousel-image" alt="Project 5">
+              <div class="carousel-caption">
+                <h5>Slide 2: Printing Process</h5>
+                <p>High-quality printing for durable and vivid banners.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/event2.webp" class="d-block w-100 carousel-image" alt="Project 6">
+              <div class="carousel-caption">
+                <h5>Slide 3: Final Assembly</h5>
+                <p>Perfectly finished banners ready for client delivery.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <script> // JavaScript to hide the loader once the page loads 
+  document.addEventListener('DOMContentLoaded', function () { 
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none'; // Hides the loader 
+    }); 
+  </script>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light text-center py-5">
+  <div class="container">
+    <!-- Title -->
+    <h2 class="mb-4 text-uppercase text-white">Contact Us</h2>
+    <p class="text-white">
+      We’re here to provide you with exceptional support and assistance. Feel free to connect with us anytime!
+    </p>
+
+    <!-- Contact Details -->
+    <div class="row justify-content-center mb-4">
+      <!-- Office Address -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Visit Our Office</h4>
+            <p>
+              MTM Adds & Events<br>
+              977 Bavani Street, Highways Nagar, Near New Bus Stand<br>
+              Villupuram, Tamil Nadu, 605602
+            </p>
+            <p>
+              <strong>Open Hours:</strong> Mon - Sat, 9 AM - 6 PM
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone Details -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Call Us</h4>
+            <p>
+              <strong>Phone:</strong> +91 9443359958<br>
+              <strong>Support:</strong> Available 24/7
+            </p>
+            <p>
+              For immediate help, reach out to our customer care team.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email Information -->
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 border-0 shadow-sm bg-secondary text-light">
+          <div class="card-body">
+            <h4 class="card-title text-dark">Email Us</h4>
+            <p>
+              <strong>General Queries:</strong><br>
+              <a href="mailto:mytownmedia23@gmail.com" class="text-warning text-decoration-none">mytownmedia23@gmail.com</a>
+            </p>
+            <p>
+              <strong>Sales Inquiries:</strong><br>
+              <a href="mailto:sales@mtmservices.com" class="text-warning text-decoration-none">sales@mtmservices.com</a>
+            </p>
+            <p>We respond within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="mb-4">
+      <h4 class="text-dark mb-3">Follow Us</h4>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="https://www.instagram.com/" target="_blank" class="text-danger mx-3" aria-label="Instagram">
+          <i class="fab fa-instagram fa-3x"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" class="text-primary mx-3" aria-label="Facebook">
+          <i class="fab fa-facebook-square fa-3x"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="text-danger mx-3" aria-label="YouTube">
+          <i class="fab fa-youtube fa-3x"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="text-info mx-3" aria-label="Twitter">
+          <i class="fab fa-twitter fa-3x"></i>
+        </a>
+      </div>
+      <p class="text-white mt-2">Stay connected and follow us for the latest updates and offers.</p>
+    </div>
+
+   
+
+    <!-- Footer Text -->
+    <p class="text:white">© 2024 MTM Services. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
